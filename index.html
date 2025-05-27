@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Wave Soundworks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: linear-gradient(90deg, #1a1a1a, #2c2c2c);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            height: 60px; /* Adjust based on the actual logo size */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('background-wave.jpg') center/cover no-repeat; /* Placeholder for background */
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #00ff00;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 24px;
+            color: #ffd700;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            background-color: #00ff00;
+            color: #1a1a1a;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ffd700;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 50px;
+            background: #2c2c2c;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            color: #00ff00;
+            margin-bottom: 50px;
+        }
+
+        .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #3a3a3a;
+            padding: 30px;
+            border-radius: 10px;
+            width: 30%;
+        }
+
+        .feature-card h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #ccc;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            color: #00ff00;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 50px;
+            background: #2c2c2c;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            color: #00ff00;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background: #3a3a3a;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .contact textarea {
+            height: 150px;
+        }
+
+        .contact button {
+            background-color: #00ff00;
+            color: #1a1a1a;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #ffd700;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px 50px;
+            background: #1a1a1a;
+            text-align: center;
+            border-top: 1px solid #3a3a3a;
+        }
+
+        footer p {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        footer .social-links a {
+            color: #00ff00;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        footer .social-links a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <!-- Replace 'gws-logo.png' with the actual path to the uploaded brand image -->
+            <img src="gws-logo.png" alt="Golden Wave Soundworks Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Golden Wave Soundworks</h1>
+        <p>Experience the Future of Sound Innovation</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Immersive Audio</h3>
+                <p>Our technology delivers crystal-clear, immersive sound experiences for all your needs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Solutions</h3>
+                <p>We tailor our audio solutions to fit your unique requirements, from studios to home setups.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Advanced Tech</h3>
+                <p>Stay ahead with cutting-edge sound technology designed for the future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Golden Wave Soundworks</h2>
+        <p>At Golden Wave Soundworks, we’re passionate about redefining audio experiences. With years of expertise, we create innovative sound solutions that bring your music, movies, and games to life. Join us on a journey to explore the golden waves of sound.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Golden Wave Soundworks. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
